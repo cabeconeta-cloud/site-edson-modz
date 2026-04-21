@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORAGE PREMIUM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>EDSON <span>STORAGE</span></h1>
+        <div class="drop-zone">
+            <input type="file" id="fileInput" hidden>
+            <label for="fileInput" class="btn-select">ESCOLHER ARQUIVO</label>
+            <p id="name">Aguardando...</p>
+        </div>
+        <button id="upBtn" class="btn-main">GERAR LINK</button>
+        <div id="res" class="result hidden">
+            <input type="text" id="link" readonly>
+            <button onclick="copy()">COPIAR</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
